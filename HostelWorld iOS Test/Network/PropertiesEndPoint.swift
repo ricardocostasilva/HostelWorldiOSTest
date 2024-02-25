@@ -25,7 +25,6 @@ enum PropertiesEndPoint: APIEndpoint {
             return Constants.APIConstants.pathCityProperties
         case .getPropertyDetail(let value):
             // Print value for debugging
-            print(value)
             return Constants.APIConstants.pathProperty + "\(value)"
         }
     }
