@@ -1,0 +1,902 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		217EA3962B83EF0900C6E5D3 /* HostelWorldiOSTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3952B83EF0900C6E5D3 /* HostelWorldiOSTestApp.swift */; };
+		217EA3982B83EF0900C6E5D3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3972B83EF0900C6E5D3 /* ContentView.swift */; };
+		217EA39A2B83EF0A00C6E5D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217EA3992B83EF0A00C6E5D3 /* Assets.xcassets */; };
+		217EA39E2B83EF0A00C6E5D3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 217EA39D2B83EF0A00C6E5D3 /* Preview Assets.xcassets */; };
+		217EA3A82B83EF0A00C6E5D3 /* HostelWorld_iOS_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3A72B83EF0A00C6E5D3 /* HostelWorld_iOS_TestTests.swift */; };
+		217EA3B22B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3B12B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITests.swift */; };
+		217EA3B42B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3B32B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITestsLaunchTests.swift */; };
+		217EA3CA2B83F0C000C6E5D3 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3C92B83F0C000C6E5D3 /* APIError.swift */; };
+		217EA3CC2B83F0FF00C6E5D3 /* PropertiesServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3CB2B83F0FF00C6E5D3 /* PropertiesServiceProtocol.swift */; };
+		217EA3CE2B83F12E00C6E5D3 /* PropertiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3CD2B83F12E00C6E5D3 /* PropertiesService.swift */; };
+		217EA3D02B83F17500C6E5D3 /* PropertiesEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3CF2B83F17500C6E5D3 /* PropertiesEndPoint.swift */; };
+		217EA3D22B83F19100C6E5D3 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3D12B83F19100C6E5D3 /* APIClient.swift */; };
+		217EA3D42B83F1F200C6E5D3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3D32B83F1F200C6E5D3 /* Constants.swift */; };
+		217EA3D62B83F30600C6E5D3 /* PropertiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3D52B83F30600C6E5D3 /* PropertiesModel.swift */; };
+		217EA3D82B84B73200C6E5D3 /* PorpertiyDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3D72B84B73200C6E5D3 /* PorpertiyDetailModel.swift */; };
+		217EA3DB2B84BB1900C6E5D3 /* PropertiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217EA3DA2B84BB1900C6E5D3 /* PropertiesViewModel.swift */; };
+		21C98F0C2B85044F004B5D68 /* PropertiesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F0B2B85044F004B5D68 /* PropertiesViewCell.swift */; };
+		21C98F0E2B851B14004B5D68 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F0D2B851B14004B5D68 /* Color+hex.swift */; };
+		21C98F102B852141004B5D68 /* SlideShow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F0F2B852141004B5D68 /* SlideShow.swift */; };
+		21C98F132B8521F5004B5D68 /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F122B8521F5004B5D68 /* PageControl.swift */; };
+		21C98F152B852234004B5D68 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F142B852234004B5D68 /* ImageView.swift */; };
+		21C98F172B85225F004B5D68 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F162B85225F004B5D68 /* ImageLoader.swift */; };
+		21C98F192B8522A1004B5D68 /* PropertiesViewCellTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F182B8522A1004B5D68 /* PropertiesViewCellTextView.swift */; };
+		21C98F1C2B852BBE004B5D68 /* PropertyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F1B2B852BBE004B5D68 /* PropertyDetailView.swift */; };
+		21C98F1F2B853D62004B5D68 /* PropertyDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F1E2B853D62004B5D68 /* PropertyDetailViewModel.swift */; };
+		21C98F212B860C1F004B5D68 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F202B860C1F004B5D68 /* MapView.swift */; };
+		21C98F242B8623CA004B5D68 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F232B8623CA004B5D68 /* InfoView.swift */; };
+		21C98F262B8623DD004B5D68 /* MapViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F252B8623DD004B5D68 /* MapViewRepresentable.swift */; };
+		21C98F282B86274A004B5D68 /* FullDescriptionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F272B86274A004B5D68 /* FullDescriptionSheet.swift */; };
+		21C98F2B2B8791BA004B5D68 /* PropertiesModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F2A2B8791BA004B5D68 /* PropertiesModelTests.swift */; };
+		21C98F2E2B879263004B5D68 /* PropertyDetailModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F2D2B879263004B5D68 /* PropertyDetailModelTests.swift */; };
+		21C98F312B8792AC004B5D68 /* ImageLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F302B8792AC004B5D68 /* ImageLoaderTests.swift */; };
+		21C98F342B8793CB004B5D68 /* URLSessionAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F332B8793CB004B5D68 /* URLSessionAPIClientTests.swift */; };
+		21C98F382B87945E004B5D68 /* PropertyDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F372B87945E004B5D68 /* PropertyDetailViewModelTests.swift */; };
+		21C98F3B2B8794EB004B5D68 /* PropertiesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F3A2B8794EB004B5D68 /* PropertiesViewModelTests.swift */; };
+		21C98F3E2B8BF099004B5D68 /* mockedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 21C98F3D2B8BF099004B5D68 /* mockedResponse.json */; };
+		21C98F3F2B8BF099004B5D68 /* mockedResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 21C98F3D2B8BF099004B5D68 /* mockedResponse.json */; };
+		21C98F412B8BF763004B5D68 /* ConditionalButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F402B8BF763004B5D68 /* ConditionalButtonModifier.swift */; };
+		21C98F422B8BF763004B5D68 /* ConditionalButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21C98F402B8BF763004B5D68 /* ConditionalButtonModifier.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		217EA3A42B83EF0A00C6E5D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 217EA38A2B83EF0900C6E5D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 217EA3912B83EF0900C6E5D3;
+			remoteInfo = "HostelWorld iOS Test";
+		};
+		217EA3AE2B83EF0A00C6E5D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 217EA38A2B83EF0900C6E5D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 217EA3912B83EF0900C6E5D3;
+			remoteInfo = "HostelWorld iOS Test";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		217EA3922B83EF0900C6E5D3 /* HostelWorld iOS Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HostelWorld iOS Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		217EA3952B83EF0900C6E5D3 /* HostelWorldiOSTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostelWorldiOSTestApp.swift; sourceTree = "<group>"; };
+		217EA3972B83EF0900C6E5D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		217EA3992B83EF0A00C6E5D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		217EA39B2B83EF0A00C6E5D3 /* HostelWorld_iOS_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HostelWorld_iOS_Test.entitlements; sourceTree = "<group>"; };
+		217EA39D2B83EF0A00C6E5D3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		217EA3A32B83EF0A00C6E5D3 /* HostelWorld iOS TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HostelWorld iOS TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		217EA3A72B83EF0A00C6E5D3 /* HostelWorld_iOS_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostelWorld_iOS_TestTests.swift; sourceTree = "<group>"; };
+		217EA3AD2B83EF0A00C6E5D3 /* HostelWorld iOS TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "HostelWorld iOS TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		217EA3B12B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostelWorld_iOS_TestUITests.swift; sourceTree = "<group>"; };
+		217EA3B32B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostelWorld_iOS_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		217EA3C92B83F0C000C6E5D3 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		217EA3CB2B83F0FF00C6E5D3 /* PropertiesServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesServiceProtocol.swift; sourceTree = "<group>"; };
+		217EA3CD2B83F12E00C6E5D3 /* PropertiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesService.swift; sourceTree = "<group>"; };
+		217EA3CF2B83F17500C6E5D3 /* PropertiesEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesEndPoint.swift; sourceTree = "<group>"; };
+		217EA3D12B83F19100C6E5D3 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		217EA3D32B83F1F200C6E5D3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		217EA3D52B83F30600C6E5D3 /* PropertiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesModel.swift; sourceTree = "<group>"; };
+		217EA3D72B84B73200C6E5D3 /* PorpertiyDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PorpertiyDetailModel.swift; sourceTree = "<group>"; };
+		217EA3DA2B84BB1900C6E5D3 /* PropertiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewModel.swift; sourceTree = "<group>"; };
+		21C98F092B84FE85004B5D68 /* HostelWorld-iOS-Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "HostelWorld-iOS-Test-Info.plist"; sourceTree = SOURCE_ROOT; };
+		21C98F0B2B85044F004B5D68 /* PropertiesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewCell.swift; sourceTree = "<group>"; };
+		21C98F0D2B851B14004B5D68 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
+		21C98F0F2B852141004B5D68 /* SlideShow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideShow.swift; sourceTree = "<group>"; };
+		21C98F122B8521F5004B5D68 /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
+		21C98F142B852234004B5D68 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		21C98F162B85225F004B5D68 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		21C98F182B8522A1004B5D68 /* PropertiesViewCellTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewCellTextView.swift; sourceTree = "<group>"; };
+		21C98F1B2B852BBE004B5D68 /* PropertyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailView.swift; sourceTree = "<group>"; };
+		21C98F1E2B853D62004B5D68 /* PropertyDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewModel.swift; sourceTree = "<group>"; };
+		21C98F202B860C1F004B5D68 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		21C98F232B8623CA004B5D68 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		21C98F252B8623DD004B5D68 /* MapViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewRepresentable.swift; sourceTree = "<group>"; };
+		21C98F272B86274A004B5D68 /* FullDescriptionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullDescriptionSheet.swift; sourceTree = "<group>"; };
+		21C98F2A2B8791BA004B5D68 /* PropertiesModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesModelTests.swift; sourceTree = "<group>"; };
+		21C98F2D2B879263004B5D68 /* PropertyDetailModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailModelTests.swift; sourceTree = "<group>"; };
+		21C98F302B8792AC004B5D68 /* ImageLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoaderTests.swift; sourceTree = "<group>"; };
+		21C98F332B8793CB004B5D68 /* URLSessionAPIClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionAPIClientTests.swift; sourceTree = "<group>"; };
+		21C98F372B87945E004B5D68 /* PropertyDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewModelTests.swift; sourceTree = "<group>"; };
+		21C98F3A2B8794EB004B5D68 /* PropertiesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewModelTests.swift; sourceTree = "<group>"; };
+		21C98F3D2B8BF099004B5D68 /* mockedResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mockedResponse.json; sourceTree = "<group>"; };
+		21C98F402B8BF763004B5D68 /* ConditionalButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConditionalButtonModifier.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		217EA38F2B83EF0900C6E5D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217EA3A02B83EF0A00C6E5D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217EA3AA2B83EF0A00C6E5D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		217EA3892B83EF0900C6E5D3 = {
+			isa = PBXGroup;
+			children = (
+				217EA3942B83EF0900C6E5D3 /* HostelWorld iOS Test */,
+				217EA3A62B83EF0A00C6E5D3 /* HostelWorld iOS TestTests */,
+				217EA3B02B83EF0A00C6E5D3 /* HostelWorld iOS TestUITests */,
+				217EA3932B83EF0900C6E5D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		217EA3932B83EF0900C6E5D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				217EA3922B83EF0900C6E5D3 /* HostelWorld iOS Test.app */,
+				217EA3A32B83EF0A00C6E5D3 /* HostelWorld iOS TestTests.xctest */,
+				217EA3AD2B83EF0A00C6E5D3 /* HostelWorld iOS TestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		217EA3942B83EF0900C6E5D3 /* HostelWorld iOS Test */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F092B84FE85004B5D68 /* HostelWorld-iOS-Test-Info.plist */,
+				21C98F112B8521E6004B5D68 /* UIComponents */,
+				217EA3C52B83F02B00C6E5D3 /* Support */,
+				217EA3C42B83F01B00C6E5D3 /* Models */,
+				217EA3C22B83F00000C6E5D3 /* Network */,
+				217EA3C12B83EFF900C6E5D3 /* ViewModel */,
+				217EA3C02B83EFF200C6E5D3 /* View */,
+				217EA3952B83EF0900C6E5D3 /* HostelWorldiOSTestApp.swift */,
+				217EA3972B83EF0900C6E5D3 /* ContentView.swift */,
+				217EA3992B83EF0A00C6E5D3 /* Assets.xcassets */,
+				217EA39B2B83EF0A00C6E5D3 /* HostelWorld_iOS_Test.entitlements */,
+				217EA39C2B83EF0A00C6E5D3 /* Preview Content */,
+			);
+			path = "HostelWorld iOS Test";
+			sourceTree = "<group>";
+		};
+		217EA39C2B83EF0A00C6E5D3 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				217EA39D2B83EF0A00C6E5D3 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		217EA3A62B83EF0A00C6E5D3 /* HostelWorld iOS TestTests */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F352B879444004B5D68 /* ViewModel */,
+				21C98F322B8793BD004B5D68 /* Network */,
+				21C98F2F2B879296004B5D68 /* UICompnentsTest */,
+				21C98F292B87919E004B5D68 /* ModelsTests */,
+				217EA3A72B83EF0A00C6E5D3 /* HostelWorld_iOS_TestTests.swift */,
+			);
+			path = "HostelWorld iOS TestTests";
+			sourceTree = "<group>";
+		};
+		217EA3B02B83EF0A00C6E5D3 /* HostelWorld iOS TestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				217EA3B12B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITests.swift */,
+				217EA3B32B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITestsLaunchTests.swift */,
+			);
+			path = "HostelWorld iOS TestUITests";
+			sourceTree = "<group>";
+		};
+		217EA3C02B83EFF200C6E5D3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F1A2B852BA4004B5D68 /* PropertyDetailViewCell */,
+				21C98F0A2B850438004B5D68 /* PropertiesViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		217EA3C12B83EFF900C6E5D3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F1D2B853D50004B5D68 /* PropertyDetail */,
+				217EA3D92B84BB0500C6E5D3 /* Properties */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		217EA3C22B83F00000C6E5D3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				217EA3D12B83F19100C6E5D3 /* APIClient.swift */,
+				217EA3C92B83F0C000C6E5D3 /* APIError.swift */,
+				217EA3CB2B83F0FF00C6E5D3 /* PropertiesServiceProtocol.swift */,
+				217EA3CD2B83F12E00C6E5D3 /* PropertiesService.swift */,
+				217EA3CF2B83F17500C6E5D3 /* PropertiesEndPoint.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		217EA3C42B83F01B00C6E5D3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				217EA3D52B83F30600C6E5D3 /* PropertiesModel.swift */,
+				217EA3D72B84B73200C6E5D3 /* PorpertiyDetailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		217EA3C52B83F02B00C6E5D3 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				217EA3C72B83F04100C6E5D3 /* Extensions */,
+				217EA3C62B83F03A00C6E5D3 /* Constants */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		217EA3C62B83F03A00C6E5D3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				217EA3D32B83F1F200C6E5D3 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		217EA3C72B83F04100C6E5D3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F0D2B851B14004B5D68 /* Color+hex.swift */,
+				21C98F402B8BF763004B5D68 /* ConditionalButtonModifier.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		217EA3D92B84BB0500C6E5D3 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				217EA3DA2B84BB1900C6E5D3 /* PropertiesViewModel.swift */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		21C98F0A2B850438004B5D68 /* PropertiesViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F0B2B85044F004B5D68 /* PropertiesViewCell.swift */,
+				21C98F0F2B852141004B5D68 /* SlideShow.swift */,
+				21C98F182B8522A1004B5D68 /* PropertiesViewCellTextView.swift */,
+			);
+			path = PropertiesViewCell;
+			sourceTree = "<group>";
+		};
+		21C98F112B8521E6004B5D68 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F122B8521F5004B5D68 /* PageControl.swift */,
+				21C98F142B852234004B5D68 /* ImageView.swift */,
+				21C98F162B85225F004B5D68 /* ImageLoader.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		21C98F1A2B852BA4004B5D68 /* PropertyDetailViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F222B8623C2004B5D68 /* MapView */,
+				21C98F1B2B852BBE004B5D68 /* PropertyDetailView.swift */,
+			);
+			path = PropertyDetailViewCell;
+			sourceTree = "<group>";
+		};
+		21C98F1D2B853D50004B5D68 /* PropertyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F1E2B853D62004B5D68 /* PropertyDetailViewModel.swift */,
+			);
+			path = PropertyDetail;
+			sourceTree = "<group>";
+		};
+		21C98F222B8623C2004B5D68 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F202B860C1F004B5D68 /* MapView.swift */,
+				21C98F232B8623CA004B5D68 /* InfoView.swift */,
+				21C98F252B8623DD004B5D68 /* MapViewRepresentable.swift */,
+				21C98F272B86274A004B5D68 /* FullDescriptionSheet.swift */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		21C98F292B87919E004B5D68 /* ModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F2A2B8791BA004B5D68 /* PropertiesModelTests.swift */,
+				21C98F2D2B879263004B5D68 /* PropertyDetailModelTests.swift */,
+			);
+			path = ModelsTests;
+			sourceTree = "<group>";
+		};
+		21C98F2F2B879296004B5D68 /* UICompnentsTest */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F302B8792AC004B5D68 /* ImageLoaderTests.swift */,
+			);
+			path = UICompnentsTest;
+			sourceTree = "<group>";
+		};
+		21C98F322B8793BD004B5D68 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F3D2B8BF099004B5D68 /* mockedResponse.json */,
+				21C98F332B8793CB004B5D68 /* URLSessionAPIClientTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		21C98F352B879444004B5D68 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F392B8794D7004B5D68 /* Properties */,
+				21C98F362B879450004B5D68 /* PropertyDetail */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		21C98F362B879450004B5D68 /* PropertyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F3A2B8794EB004B5D68 /* PropertiesViewModelTests.swift */,
+			);
+			path = PropertyDetail;
+			sourceTree = "<group>";
+		};
+		21C98F392B8794D7004B5D68 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				21C98F372B87945E004B5D68 /* PropertyDetailViewModelTests.swift */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		217EA3912B83EF0900C6E5D3 /* HostelWorld iOS Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 217EA3B72B83EF0A00C6E5D3 /* Build configuration list for PBXNativeTarget "HostelWorld iOS Test" */;
+			buildPhases = (
+				217EA38E2B83EF0900C6E5D3 /* Sources */,
+				217EA38F2B83EF0900C6E5D3 /* Frameworks */,
+				217EA3902B83EF0900C6E5D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HostelWorld iOS Test";
+			productName = "HostelWorld iOS Test";
+			productReference = 217EA3922B83EF0900C6E5D3 /* HostelWorld iOS Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+		217EA3A22B83EF0A00C6E5D3 /* HostelWorld iOS TestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 217EA3BA2B83EF0A00C6E5D3 /* Build configuration list for PBXNativeTarget "HostelWorld iOS TestTests" */;
+			buildPhases = (
+				217EA39F2B83EF0A00C6E5D3 /* Sources */,
+				217EA3A02B83EF0A00C6E5D3 /* Frameworks */,
+				217EA3A12B83EF0A00C6E5D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				217EA3A52B83EF0A00C6E5D3 /* PBXTargetDependency */,
+			);
+			name = "HostelWorld iOS TestTests";
+			productName = "HostelWorld iOS TestTests";
+			productReference = 217EA3A32B83EF0A00C6E5D3 /* HostelWorld iOS TestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		217EA3AC2B83EF0A00C6E5D3 /* HostelWorld iOS TestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 217EA3BD2B83EF0A00C6E5D3 /* Build configuration list for PBXNativeTarget "HostelWorld iOS TestUITests" */;
+			buildPhases = (
+				217EA3A92B83EF0A00C6E5D3 /* Sources */,
+				217EA3AA2B83EF0A00C6E5D3 /* Frameworks */,
+				217EA3AB2B83EF0A00C6E5D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				217EA3AF2B83EF0A00C6E5D3 /* PBXTargetDependency */,
+			);
+			name = "HostelWorld iOS TestUITests";
+			productName = "HostelWorld iOS TestUITests";
+			productReference = 217EA3AD2B83EF0A00C6E5D3 /* HostelWorld iOS TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		217EA38A2B83EF0900C6E5D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					217EA3912B83EF0900C6E5D3 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					217EA3A22B83EF0A00C6E5D3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 217EA3912B83EF0900C6E5D3;
+					};
+					217EA3AC2B83EF0A00C6E5D3 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 217EA3912B83EF0900C6E5D3;
+					};
+				};
+			};
+			buildConfigurationList = 217EA38D2B83EF0900C6E5D3 /* Build configuration list for PBXProject "HostelWorld iOS Test" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 217EA3892B83EF0900C6E5D3;
+			productRefGroup = 217EA3932B83EF0900C6E5D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				217EA3912B83EF0900C6E5D3 /* HostelWorld iOS Test */,
+				217EA3A22B83EF0A00C6E5D3 /* HostelWorld iOS TestTests */,
+				217EA3AC2B83EF0A00C6E5D3 /* HostelWorld iOS TestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		217EA3902B83EF0900C6E5D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217EA39E2B83EF0A00C6E5D3 /* Preview Assets.xcassets in Resources */,
+				217EA39A2B83EF0A00C6E5D3 /* Assets.xcassets in Resources */,
+				21C98F3E2B8BF099004B5D68 /* mockedResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217EA3A12B83EF0A00C6E5D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C98F3F2B8BF099004B5D68 /* mockedResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217EA3AB2B83EF0A00C6E5D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		217EA38E2B83EF0900C6E5D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217EA3982B83EF0900C6E5D3 /* ContentView.swift in Sources */,
+				217EA3D22B83F19100C6E5D3 /* APIClient.swift in Sources */,
+				21C98F192B8522A1004B5D68 /* PropertiesViewCellTextView.swift in Sources */,
+				21C98F102B852141004B5D68 /* SlideShow.swift in Sources */,
+				21C98F1F2B853D62004B5D68 /* PropertyDetailViewModel.swift in Sources */,
+				217EA3962B83EF0900C6E5D3 /* HostelWorldiOSTestApp.swift in Sources */,
+				217EA3CC2B83F0FF00C6E5D3 /* PropertiesServiceProtocol.swift in Sources */,
+				21C98F212B860C1F004B5D68 /* MapView.swift in Sources */,
+				21C98F132B8521F5004B5D68 /* PageControl.swift in Sources */,
+				217EA3D62B83F30600C6E5D3 /* PropertiesModel.swift in Sources */,
+				21C98F1C2B852BBE004B5D68 /* PropertyDetailView.swift in Sources */,
+				21C98F262B8623DD004B5D68 /* MapViewRepresentable.swift in Sources */,
+				21C98F0E2B851B14004B5D68 /* Color+hex.swift in Sources */,
+				21C98F242B8623CA004B5D68 /* InfoView.swift in Sources */,
+				21C98F152B852234004B5D68 /* ImageView.swift in Sources */,
+				217EA3D02B83F17500C6E5D3 /* PropertiesEndPoint.swift in Sources */,
+				217EA3CA2B83F0C000C6E5D3 /* APIError.swift in Sources */,
+				21C98F172B85225F004B5D68 /* ImageLoader.swift in Sources */,
+				217EA3D82B84B73200C6E5D3 /* PorpertiyDetailModel.swift in Sources */,
+				217EA3DB2B84BB1900C6E5D3 /* PropertiesViewModel.swift in Sources */,
+				21C98F412B8BF763004B5D68 /* ConditionalButtonModifier.swift in Sources */,
+				217EA3CE2B83F12E00C6E5D3 /* PropertiesService.swift in Sources */,
+				21C98F282B86274A004B5D68 /* FullDescriptionSheet.swift in Sources */,
+				217EA3D42B83F1F200C6E5D3 /* Constants.swift in Sources */,
+				21C98F0C2B85044F004B5D68 /* PropertiesViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217EA39F2B83EF0A00C6E5D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21C98F3B2B8794EB004B5D68 /* PropertiesViewModelTests.swift in Sources */,
+				21C98F422B8BF763004B5D68 /* ConditionalButtonModifier.swift in Sources */,
+				21C98F2E2B879263004B5D68 /* PropertyDetailModelTests.swift in Sources */,
+				21C98F2B2B8791BA004B5D68 /* PropertiesModelTests.swift in Sources */,
+				21C98F382B87945E004B5D68 /* PropertyDetailViewModelTests.swift in Sources */,
+				21C98F342B8793CB004B5D68 /* URLSessionAPIClientTests.swift in Sources */,
+				21C98F312B8792AC004B5D68 /* ImageLoaderTests.swift in Sources */,
+				217EA3A82B83EF0A00C6E5D3 /* HostelWorld_iOS_TestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		217EA3A92B83EF0A00C6E5D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				217EA3B42B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITestsLaunchTests.swift in Sources */,
+				217EA3B22B83EF0A00C6E5D3 /* HostelWorld_iOS_TestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		217EA3A52B83EF0A00C6E5D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 217EA3912B83EF0900C6E5D3 /* HostelWorld iOS Test */;
+			targetProxy = 217EA3A42B83EF0A00C6E5D3 /* PBXContainerItemProxy */;
+		};
+		217EA3AF2B83EF0A00C6E5D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 217EA3912B83EF0900C6E5D3 /* HostelWorld iOS Test */;
+			targetProxy = 217EA3AE2B83EF0A00C6E5D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		217EA3B52B83EF0A00C6E5D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		217EA3B62B83EF0A00C6E5D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		217EA3B82B83EF0A00C6E5D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HostelWorld iOS Test/HostelWorld_iOS_Test.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HostelWorld iOS Test/Preview Content\"";
+				DEVELOPMENT_TEAM = 937653S469;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HostelWorld-iOS-Test-Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ricardocsilva.com.HostelWorld-iOS-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		217EA3B92B83EF0A00C6E5D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HostelWorld iOS Test/HostelWorld_iOS_Test.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HostelWorld iOS Test/Preview Content\"";
+				DEVELOPMENT_TEAM = 937653S469;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "HostelWorld-iOS-Test-Info.plist";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ricardocsilva.com.HostelWorld-iOS-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		217EA3BB2B83EF0A00C6E5D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 937653S469;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ricardocsilva.com.HostelWorld-iOS-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HostelWorld iOS Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HostelWorld iOS Test";
+			};
+			name = Debug;
+		};
+		217EA3BC2B83EF0A00C6E5D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 937653S469;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ricardocsilva.com.HostelWorld-iOS-TestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HostelWorld iOS Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HostelWorld iOS Test";
+			};
+			name = Release;
+		};
+		217EA3BE2B83EF0A00C6E5D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 937653S469;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ricardocsilva.com.HostelWorld-iOS-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HostelWorld iOS Test";
+			};
+			name = Debug;
+		};
+		217EA3BF2B83EF0A00C6E5D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 937653S469;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ricardocsilva.com.HostelWorld-iOS-TestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "HostelWorld iOS Test";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		217EA38D2B83EF0900C6E5D3 /* Build configuration list for PBXProject "HostelWorld iOS Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217EA3B52B83EF0A00C6E5D3 /* Debug */,
+				217EA3B62B83EF0A00C6E5D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		217EA3B72B83EF0A00C6E5D3 /* Build configuration list for PBXNativeTarget "HostelWorld iOS Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217EA3B82B83EF0A00C6E5D3 /* Debug */,
+				217EA3B92B83EF0A00C6E5D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		217EA3BA2B83EF0A00C6E5D3 /* Build configuration list for PBXNativeTarget "HostelWorld iOS TestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217EA3BB2B83EF0A00C6E5D3 /* Debug */,
+				217EA3BC2B83EF0A00C6E5D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		217EA3BD2B83EF0A00C6E5D3 /* Build configuration list for PBXNativeTarget "HostelWorld iOS TestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				217EA3BE2B83EF0A00C6E5D3 /* Debug */,
+				217EA3BF2B83EF0A00C6E5D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 217EA38A2B83EF0900C6E5D3 /* Project object */;
+}

@@ -1,0 +1,31 @@
+{
+  "properties": [
+    {
+      "id": "1",
+      "name": "Mocked Property 1",
+      "city": {
+        "id": "1",
+        "name": "Mocked City 1",
+        "country": "Mocked Country",
+        "idCountry": "1"
+      },
+      "latitude": "123.456",
+      "longitude": "789.012",
+      "type": "Mocked Type",
+      "images": [
+        {
+          "suffix": "image1_suffix",
+          "prefix": "image1_prefix"
+        },
+        {
+          "suffix": "image2_suffix",
+          "prefix": "image2_prefix"
+        }
+      ],
+      "overallRating": {
+        "overall": 4,
+        "numberOfRatings": 100
+      }
+    }
+  ]
+}
